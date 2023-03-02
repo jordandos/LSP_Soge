@@ -1,30 +1,29 @@
 package org.howard.edu.lsp.assignment4;
 import java.util.*;
+
 public class IntegerSet { //making integerset class
     private List<Integer> my_set;
-    
-    /*
-     * creates a public set
-     * 
+    /**
+     * @author creates a public set
+     *
      */
     public IntegerSet(){ //creating public set
         my_set = new ArrayList<Integer>();
     }
-    
-    /*
-     * 
 
-     * //integer exception for largest and smallest function
+    /**
+     * @author integer exception for largest and smallest function
+     *
      */
     public class IntegerSetException extends Exception { 
         public IntegerSetException(String error) {
             super(error);
         }
     }
-    /*
-     * returns the set
-     */
 
+    /**
+     *  returns the set
+     */
     public List<Integer> get_set() {
         return my_set;
     }
@@ -32,6 +31,9 @@ public class IntegerSet { //making integerset class
      * makes a new set
      */
 
+    /**
+     * makes a new set
+     */
     public void set_set(List<Integer> new_set){
         my_set = new_set;
     }
